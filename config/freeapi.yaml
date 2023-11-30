@@ -5,5 +5,5 @@ test_ipaddress:
 test_nickname: [{num: 3}]
 
 test_translate:
-  - text: 恭喜发财
-  - text: 身体健康
+  - text: "${random_word()}"
+  - text: "${random_word()}"
