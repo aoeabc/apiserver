@@ -1,10 +1,19 @@
 import json
-
 import yaml
 from faker import Faker
+import configparser
+import os
+
+# 项目路径
+project_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+# config.ini文件路径
+config_path = os.path.join(project_path, "config", "config.ini")
 
 
-class yamlUtil:
+class dataUtil:
+    def __init__(self):
+        self.config_path = config_path
+
     def read_yaml(self, path):
         with open(path, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
@@ -20,9 +29,14 @@ class yamlUtil:
             index_start = str_data.find("$")
             index_end = str_data.find(")}")
             if index_start >= 0:
-                func_name = str_data[index_start + 2:index_end+1]
-                str_data = str_data.replace('${' + func_name + '}', eval(func_name),1)
+                func_name = str_data[index_start + 2:index_end + 1]
+                str_data = str_data.replace('${' + func_name + '}', eval(func_name), 1)
         return json.loads(str_data)
+
+    def data_ini(self):
+        config = configparser.ConfigParser()
+        config.read(self.config_path, encoding="utf8")
+        return config
 
 
 def random_word():
@@ -31,9 +45,4 @@ def random_word():
     return random_name
 
 
-yaml_data = yamlUtil()
-
-if __name__ == '__main__':
-    yaml_data.trans_data()
-        # data = yaml_data.read_yaml("D:/py_scripts/apiserver/config/freeapi.yaml")["test_nickname1"]
-    # print(data)
+data_read = dataUtil()
