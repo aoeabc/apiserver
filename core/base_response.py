@@ -1,0 +1,2 @@
+class ResponceBase:
+    pass

@@ -1,8 +1,10 @@
 import os
 from utils.data_read import data_read
 from core.base_api import ApiClient
-
+from utils.response_util import process_response
 # 项目路径
+
+
 project_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 # host域名
 yuanxi_api_sit_host = data_read.data_ini()["host"]["api_sit_host"]
