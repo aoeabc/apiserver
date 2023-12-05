@@ -1,0 +1,13 @@
+test_code: {mobile: 13488010001}
+
+test_register:
+  - paramas:
+      password: 123456
+      username: 13488010001
+      mobile: 13488010001
+    title: 注册并登录
+  - paramas:
+      password: 123456
+      username: 13488020001
+      mobile: 13488020001
+    title: 注册失败

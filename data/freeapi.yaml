@@ -1,0 +1,11 @@
+test_ipaddress:
+  - params: {ip: 183.17.235.15}
+    title: 查询国内IP地址
+  - params: {ip: 183.17.235.15}
+    title: 查询国外IP地址
+
+test_nickname: [{num: 3}]
+
+test_translate:
+  - text: "${random_word()}"
+  - text: "${random_word()}"

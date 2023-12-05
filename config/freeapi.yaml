@@ -1,9 +1,0 @@
-test_ipaddress:
-  - ip: 183.17.235.15
-  - ip: 182.17.235.15
-
-test_nickname: [{num: 3}]
-
-test_translate:
-  - text: "${random_word()}"
-  - text: "${random_word()}"
