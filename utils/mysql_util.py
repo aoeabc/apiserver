@@ -25,14 +25,14 @@ class MysqlDb:
         self.cursor.execute(sql)
         data = self.cursor.fetchone()
         logger.info("sql语句执行结果：{}".format(data))
-        return data
+        return data[0]
 
     def find_data(self,sql):
         logger.info("执行sql语句：{}".format(sql))
         self.cursor.execute(sql)
         data = self.cursor.fetchall()
         logger.info("sql语句执行结果：{}".format(data))
-        return data
+        return data[0]
 
     def delete_data(self,sql):
         logger.info("执行sql语句：{}".format(sql))
@@ -47,7 +47,9 @@ db=MysqlDb()
 if __name__ == '__main__':
     db=MysqlDb()
     # data=db.find_one("select * from users_userprofile where mobile ='13488010001' ")
-    data=db.find_one("select code from users_verifycode where mobile ='13488010001' order by id desc")
+    data=db.find_one("select code from users_verifycode where mobile ='13488010003' order by id desc")
+    # data=db.find_data("select count(1) from goods_banner ")
+
     print(data)
     # db.delete_data("delete from users_verifycode where mobile ='13488010001'")
     # data = db.find_one("select code from users_verifycode where mobile ='13488010001' order by id desc")

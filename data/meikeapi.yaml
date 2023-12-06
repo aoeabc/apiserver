@@ -1,4 +1,5 @@
 test_code: {mobile: 13488010001}
+test_token: {username: 13488010003,password: 123456}
 
 test_register:
   - paramas:
@@ -11,3 +12,19 @@ test_register:
       username: 13488020001
       mobile: 13488020001
     title: 注册失败
+
+test_login:
+  - paramas:
+      password: 123456
+      username: 13488010002
+    title: 登录账号成功
+  - paramas:
+      password: 1234567
+      username: 13488010002
+    title: 登录账号失败，密码错误
+
+test_shopcarts:
+  - paramas:
+      goods: 1
+      nums: 1
+    title: 登录账号成功
