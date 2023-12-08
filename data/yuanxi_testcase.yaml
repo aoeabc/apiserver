@@ -1,0 +1,10 @@
+test_ipaddress:
+  - request_info:
+      title: 查询ip地址
+      method: post
+      url: /api/iplocation/
+    case_info:
+      - data:
+          ip: 183.17.235.15
+        assert_data:
+          - cons: [$..msg,"查询成功"]

@@ -1,0 +1,47 @@
+test_token: {username: 13488010003,password: 123456}
+test_login:
+  - request_info:
+      title: 账号登录
+      method: post
+      url: /login/
+    case_info:
+      - data:
+          password: 123456
+          username: 13488010002
+        assert_data:
+          - contains: [$.token,"ey"]
+        extract:
+          token: $.token
+      - data:
+          password: 1234567
+          username: 13488010002
+        assert_data:
+          - contains: [$.non_field_errors,"无法使用提供的认证信息登录。"]
+
+test_banners:
+  - request_info:
+      title: 获取首页轮播数据
+      method: get
+      url: /banners/
+    case_info:
+      - assert_data:
+          - len: [$..id,5]
+
+test_shopcarts:
+  - request_info:
+      title: 获取购物车数据
+      method: get
+      url: /shopcarts/
+    case_info:
+      - assert_data:
+          - len: [$..goods.id,2]
+  - request_info:
+      title: 加入购物车
+      method: post
+      url: /shopcarts/
+    case_info:
+      - assert_data:
+          - equal: [$.goods,1]
+        data:
+          goods: 1
+          nums: 1
