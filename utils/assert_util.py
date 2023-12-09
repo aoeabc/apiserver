@@ -1,4 +1,4 @@
-import jsonpath
+from utils.casedata_yaml import yaml_data
 
 
 class AssertCheck:
@@ -6,7 +6,7 @@ class AssertCheck:
     def assert_check(self, data, respon):
         for assert_data in data:
             for type, chack_data in assert_data.items():
-                real_data = self.get_jsonpath(respon, list(chack_data)[0])
+                real_data = yaml_data.get_jsonpath(respon, list(chack_data)[0])
                 expect_data = list(chack_data)[1]
                 if type in ["contains","cons"]:
                     self.contains_data(real_data, expect_data)
@@ -15,14 +15,7 @@ class AssertCheck:
                 elif type in ["equal"]:
                     self.equal_data(real_data, expect_data)
 
-    def get_jsonpath(self, data, jsonpath_data):
-        result = jsonpath.jsonpath(data, jsonpath_data)
-        if len(result) == 0:
-            return data
-        elif len(result) == 1:
-            return result[0]
-        else:
-            return result
+
 
     def contains_data(self, data, expr):
         assert expr in data, "断言：%s 包含 %s 出错" % (expr, data)
@@ -31,7 +24,7 @@ class AssertCheck:
         assert len(data) == expr, "断言：%s 的长度与 %s 对比出错" % (data, expr)
 
     def equal_data(self, data, expr):
-        assert expr == data, "断言：%s 等于 %s 出错" % (expr, data)
+        assert str(expr) == str(data), "断言：%s 等于 %s 出错" % (expr, data)
 
 assert_check = AssertCheck()
 

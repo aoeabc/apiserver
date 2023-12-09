@@ -26,6 +26,8 @@ test_banners:
     case_info:
       - assert_data:
           - len: [$..id,5]
+        extract:
+          goods: $..goods
 
 test_shopcarts:
   - request_info:
@@ -45,3 +47,12 @@ test_shopcarts:
         data:
           goods: 1
           nums: 1
+
+test_good_detail:
+  - request_info:
+      title: 获取商品详情
+      method: get
+      url: /goods/${goods}/
+    case_info:
+      - assert_data:
+          - equal: [$.id,"${goods}"]

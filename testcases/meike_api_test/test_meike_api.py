@@ -17,3 +17,10 @@ class TestMeikeApi:
     @pytest.mark.parametrize("data", yaml_data.read_yaml("meike_testcase.yaml", "test_shopcarts"))
     def test_shopcarts(self, data, get_session,get_token):
         result = get_session.get_responce(data,get_token)
+
+    @pytest.mark.parametrize("data", yaml_data.read_yaml("meike_testcase.yaml", "test_good_detail"))
+    def test_test_good_detail(self, data, get_session,get_token):
+        result = get_session.get_responce(data,get_token)
+
+if __name__ == '__main__':
+    pytest

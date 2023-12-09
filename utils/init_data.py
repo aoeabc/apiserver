@@ -1,4 +1,9 @@
+import json
+import os
+
 from faker import Faker
+
+
 
 class InitData:
 
@@ -6,3 +11,4 @@ class InitData:
         fk = Faker(["zh_CN"])
         random_name = fk.word(ext_word_list=None)
         return random_name
+

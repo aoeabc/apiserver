@@ -8,3 +8,14 @@ test_ipaddress:
           ip: 183.17.235.15
         assert_data:
           - cons: [$..msg,"查询成功"]
+
+test_translate:
+  - request_info:
+      title: 翻译文本
+      method: get
+      url: /api/translation/
+    case_info:
+      - params:
+          text: "${random_word()}"
+        assert_data:
+          - cons: [$..msg,"查询成功"]
