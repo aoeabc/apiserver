@@ -1,0 +1,310 @@
+[2023-12-12 16:21:23,501][conftest.py 17][INFO]: 接口测试用例开始>>>
+[2023-12-12 16:21:23,505][base_api.py 31][INFO]: 接口请求方法>>>post
+[2023-12-12 16:21:23,505][base_api.py 32][INFO]: 接口请求地址>>>http://admin.5istudy.online/login/
+[2023-12-12 16:21:23,505][base_api.py 34][INFO]: 接口请求参数>>>
+{
+  "password": 123456,
+  "username": 13488010002
+}
+[2023-12-12 16:21:23,505][base_api.py 40][INFO]: 接口请求参数>>>null
+[2023-12-12 16:21:23,983][base_api.py 28][INFO]: 接口返回数据>>>{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMzA1NjYsInVzZXJuYW1lIjoiMTM0ODgwMTAwMDIiLCJleHAiOjE3MDI5NzQwODIsImVtYWlsIjpudWxsfQ.jSpPiR7uIPTd5k3opf27yKcGtzHhwVDhPDn7yngTdEc"
+}
+[2023-12-12 16:21:23,991][conftest.py 19][INFO]: 接口测试用例完成>>>
+[2023-12-12 16:21:23,998][conftest.py 17][INFO]: 接口测试用例开始>>>
+[2023-12-12 16:21:24,000][base_api.py 31][INFO]: 接口请求方法>>>post
+[2023-12-12 16:21:24,000][base_api.py 32][INFO]: 接口请求地址>>>http://admin.5istudy.online/login/
+[2023-12-12 16:21:24,000][base_api.py 34][INFO]: 接口请求参数>>>
+{
+  "password": 1234567,
+  "username": 13488010002
+}
+[2023-12-12 16:21:24,000][base_api.py 40][INFO]: 接口请求参数>>>null
+[2023-12-12 16:21:24,225][base_api.py 27][INFO]: 接口请求失败
+[2023-12-12 16:21:24,225][base_api.py 28][INFO]: 接口返回数据>>>{
+  "non_field_errors": [
+    "无法使用提供的认证信息登录。"
+  ]
+}
+[2023-12-12 16:21:24,229][conftest.py 19][INFO]: 接口测试用例完成>>>
+[2023-12-12 16:21:24,243][conftest.py 17][INFO]: 接口测试用例开始>>>
+[2023-12-12 16:21:24,244][base_api.py 31][INFO]: 接口请求方法>>>get
+[2023-12-12 16:21:24,244][base_api.py 32][INFO]: 接口请求地址>>>http://admin.5istudy.online/banners/
+[2023-12-12 16:21:24,245][base_api.py 40][INFO]: 接口请求参数>>>null
+[2023-12-12 16:21:24,372][base_api.py 28][INFO]: 接口返回数据>>>[
+  {
+    "id": 1824,
+    "image": "http://admin.5istudy.online/media/banner/banner3_fzsuGSG.jpg",
+    "index": 1,
+    "add_time": "2022-10-27T08:33:00",
+    "goods": 15
+  },
+  {
+    "id": 1821,
+    "image": "http://admin.5istudy.online/media/banner/%E6%A1%83%E5%AD%90.jpg",
+    "index": 2,
+    "add_time": "2022-08-23T00:34:00",
+    "goods": 82
+  },
+  {
+    "id": 1820,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  },
+  {
+    "id": 1822,
+    "image": "http://admin.5istudy.online/media/banner/%E5%9B%BE%E7%89%872.png",
+    "index": 3,
+    "add_time": "2022-09-22T10:53:00",
+    "goods": 83
+  },
+  {
+    "id": 1825,
+    "image": "http://admin.5istudy.online/media/banner/banner1.jpg",
+    "index": 3,
+    "add_time": "2021-11-26T13:22:00",
+    "goods": 4
+  }
+]
+[2023-12-12 16:21:24,380][conftest.py 19][INFO]: 接口测试用例完成>>>
+[2023-12-12 16:21:24,397][base_api.py 31][INFO]: 接口请求方法>>>post
+[2023-12-12 16:21:24,397][base_api.py 32][INFO]: 接口请求地址>>>http://admin.5istudy.online/login/
+[2023-12-12 16:21:24,397][base_api.py 34][INFO]: 接口请求参数>>>
+{
+  "password": 123456,
+  "username": "13488010003"
+}
+[2023-12-12 16:21:24,598][base_api.py 28][INFO]: 接口返回数据>>>{
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMzA1NzYsInVzZXJuYW1lIjoiMTM0ODgwMTAwMDMiLCJleHAiOjE3MDI5NzQwODMsImVtYWlsIjpudWxsfQ.ekYamSI7Hys2BT07ny2dNYE0-gUqn1pJgCzxSI-OJRE"
+}
+[2023-12-12 16:21:24,599][conftest.py 17][INFO]: 接口测试用例开始>>>
+[2023-12-12 16:21:24,600][base_api.py 31][INFO]: 接口请求方法>>>get
+[2023-12-12 16:21:24,600][base_api.py 32][INFO]: 接口请求地址>>>http://admin.5istudy.online/shopcarts/
+[2023-12-12 16:21:24,601][base_api.py 40][INFO]: 接口请求参数>>>{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMzA1NzYsInVzZXJuYW1lIjoiMTM0ODgwMTAwMDMiLCJleHAiOjE3MDI5NzQwODMsImVtYWlsIjpudWxsfQ.ekYamSI7Hys2BT07ny2dNYE0-gUqn1pJgCzxSI-OJRE"
+}
+[2023-12-12 16:21:24,699][base_api.py 28][INFO]: 接口返回数据>>>[
+  {
+    "id": 8497,
+    "goods": {
+      "id": 1,
+      "category": {
+        "id": 20,
+        "sub_cat": [],
+        "add_time": "2019-11-19 13:21:56",
+        "name": "根茎类",
+        "code": "gjl",
+        "desc": "",
+        "category_type": 2,
+        "is_tab": false,
+        "parent_category": 1
+      },
+      "images": [
+        {
+          "image": "http://admin.5istudy.online/media/goods/images/1_P_1449024889889.jpg"
+        },
+        {
+          "image": "http://admin.5istudy.online/media/1.png"
+        },
+        {
+          "image": "http://admin.5istudy.online/media/goods/images/1_P_1449024889287.jpg"
+        }
+      ],
+      "add_time": "2019-11-19 13:22:00",
+      "goods_sn": "2222",
+      "name": "新鲜水果甜蜜香脆单果约800克",
+      "click_num": 0,
+      "sold_num": 16,
+      "fav_num": 0,
+      "goods_num": -6,
+      "market_price": 232.0,
+      "shop_price": 156.0,
+      "goods_brief": "食用百香果可以增加胃部饱腹感，减少余热量的摄入，还可以吸附胆固醇和胆汁之类有机分子，抑制人体对脂肪的吸收。因此，长期食用有利于改善人体营养吸收结构，降低体内脂肪，塑造健康优美体态。",
+      "goods_desc": "<p><img src=\"http://admin.5istudy.online/media/goods/images/2_20170719161405_249.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img \r\nsrc=\"http://admin.5istudy.online/media/goods/images/2_20170719161414_628.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img \r\nsrc=\"http://admin.5istudy.online/media/goods/images/2_20170719161414_628.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img",
+      "ship_free": false,
+      "goods_front_image": "http://admin.5istudy.online/media/goods/images/1_P_1449024889889.jpg",
+      "is_new": false,
+      "is_hot": false
+    },
+    "nums": 19,
+    "add_time": "2023-12-06T17:32:16.009597",
+    "user": 230576
+  },
+  {
+    "id": 8496,
+    "goods": {
+      "id": 15,
+      "category": {
+        "id": 37,
+        "sub_cat": [
+          {
+            "id": 38,
+            "sub_cat": [],
+            "add_time": "2019-11-19 13:21:56",
+            "name": "白兰地",
+            "code": "bld",
+            "desc": "",
+            "category_type": 3,
+            "is_tab": false,
+            "parent_category": 37
+          },
+          {
+            "id": 39,
+            "sub_cat": [],
+            "add_time": "2019-11-19 13:21:56",
+            "name": "威士忌",
+            "code": "wsj",
+            "desc": "",
+            "category_type": 3,
+            "is_tab": false,
+            "parent_category": 37
+          }
+        ],
+        "add_time": "2019-11-19 13:21:56",
+        "name": "红酒",
+        "code": "hj",
+        "desc": "",
+        "category_type": 2,
+        "is_tab": false,
+        "parent_category": 24
+      },
+      "images": [
+        {
+          "image": "http://admin.5istudy.online/media/goods/images/16_P_1448947194687.jpg"
+        }
+      ],
+      "add_time": "2019-11-19 13:22:09",
+      "goods_sn": "8",
+      "name": "52度茅台集团国隆双喜酒500mlx6",
+      "click_num": 0,
+      "sold_num": 3,
+      "fav_num": 0,
+      "goods_num": -3,
+      "market_price": 23.0,
+      "shop_price": 19.0,
+      "goods_brief": "贵州茅台酒厂（集团）保健酒业有限公司生产，是以“龙”字打头的酒水。中国龙文化上下8000年，源远而流长，龙的形象是一种符号、一种意绪、一种血肉相联的情感。",
+      "goods_desc": "<p><img src=\"/media/goods/images/2_20170719161405_249.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161414_628.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161435_381.jpg\" title=\"\" alt=\"2.jpg\"/></p>",
+      "ship_free": true,
+      "goods_front_image": "http://admin.5istudy.online/media/goods/images/16_P_1448947194687.jpg",
+      "is_new": false,
+      "is_hot": false
+    },
+    "nums": 2,
+    "add_time": "2023-12-06T17:02:01.165131",
+    "user": 230576
+  }
+]
+[2023-12-12 16:21:24,703][conftest.py 19][INFO]: 接口测试用例完成>>>
+[2023-12-12 16:21:24,710][conftest.py 17][INFO]: 接口测试用例开始>>>
+[2023-12-12 16:21:24,711][base_api.py 31][INFO]: 接口请求方法>>>post
+[2023-12-12 16:21:24,711][base_api.py 32][INFO]: 接口请求地址>>>http://admin.5istudy.online/shopcarts/
+[2023-12-12 16:21:24,711][base_api.py 34][INFO]: 接口请求参数>>>
+{
+  "goods": 1,
+  "nums": 1
+}
+[2023-12-12 16:21:24,711][base_api.py 40][INFO]: 接口请求参数>>>{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMzA1NzYsInVzZXJuYW1lIjoiMTM0ODgwMTAwMDMiLCJleHAiOjE3MDI5NzQwODMsImVtYWlsIjpudWxsfQ.ekYamSI7Hys2BT07ny2dNYE0-gUqn1pJgCzxSI-OJRE"
+}
+[2023-12-12 16:21:24,785][base_api.py 28][INFO]: 接口返回数据>>>{
+  "nums": 20,
+  "goods": 1
+}
+[2023-12-12 16:21:24,789][conftest.py 19][INFO]: 接口测试用例完成>>>
+[2023-12-12 16:21:24,803][conftest.py 17][INFO]: 接口测试用例开始>>>
+[2023-12-12 16:21:24,809][base_api.py 31][INFO]: 接口请求方法>>>get
+[2023-12-12 16:21:24,809][base_api.py 32][INFO]: 接口请求地址>>>http://admin.5istudy.online/goods/15/
+[2023-12-12 16:21:24,810][base_api.py 40][INFO]: 接口请求参数>>>{
+  "Authorization": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyMzA1NzYsInVzZXJuYW1lIjoiMTM0ODgwMTAwMDMiLCJleHAiOjE3MDI5NzQwODMsImVtYWlsIjpudWxsfQ.ekYamSI7Hys2BT07ny2dNYE0-gUqn1pJgCzxSI-OJRE"
+}
+[2023-12-12 16:21:24,885][base_api.py 28][INFO]: 接口返回数据>>>{
+  "id": 15,
+  "category": {
+    "id": 37,
+    "sub_cat": [
+      {
+        "id": 38,
+        "sub_cat": [],
+        "add_time": "2019-11-19 13:21:56",
+        "name": "白兰地",
+        "code": "bld",
+        "desc": "",
+        "category_type": 3,
+        "is_tab": false,
+        "parent_category": 37
+      },
+      {
+        "id": 39,
+        "sub_cat": [],
+        "add_time": "2019-11-19 13:21:56",
+        "name": "威士忌",
+        "code": "wsj",
+        "desc": "",
+        "category_type": 3,
+        "is_tab": false,
+        "parent_category": 37
+      }
+    ],
+    "add_time": "2019-11-19 13:21:56",
+    "name": "红酒",
+    "code": "hj",
+    "desc": "",
+    "category_type": 2,
+    "is_tab": false,
+    "parent_category": 24
+  },
+  "images": [
+    {
+      "image": "http://admin.5istudy.online/media/goods/images/16_P_1448947194687.jpg"
+    }
+  ],
+  "add_time": "2019-11-19 13:22:09",
+  "goods_sn": "8",
+  "name": "52度茅台集团国隆双喜酒500mlx6",
+  "click_num": 0,
+  "sold_num": 3,
+  "fav_num": 0,
+  "goods_num": -3,
+  "market_price": 23.0,
+  "shop_price": 19.0,
+  "goods_brief": "贵州茅台酒厂（集团）保健酒业有限公司生产，是以“龙”字打头的酒水。中国龙文化上下8000年，源远而流长，龙的形象是一种符号、一种意绪、一种血肉相联的情感。",
+  "goods_desc": "<p><img src=\"/media/goods/images/2_20170719161405_249.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161414_628.jpg\" title=\"\" alt=\"2.jpg\"/></p><p><img src=\"/media/goods/images/2_20170719161435_381.jpg\" title=\"\" alt=\"2.jpg\"/></p>",
+  "ship_free": true,
+  "goods_front_image": "http://admin.5istudy.online/media/goods/images/16_P_1448947194687.jpg",
+  "is_new": false,
+  "is_hot": false
+}
+[2023-12-12 16:21:24,888][conftest.py 19][INFO]: 接口测试用例完成>>>
+[2023-12-12 16:21:24,899][conftest.py 17][INFO]: 接口测试用例开始>>>
+[2023-12-12 16:21:24,901][base_api.py 31][INFO]: 接口请求方法>>>post
+[2023-12-12 16:21:24,901][base_api.py 32][INFO]: 接口请求地址>>>https://www.yuanxiapi.cn/api/iplocation/
+[2023-12-12 16:21:24,902][base_api.py 34][INFO]: 接口请求参数>>>
+{
+  "ip": "183.17.235.15"
+}
+[2023-12-12 16:21:24,902][base_api.py 40][INFO]: 接口请求参数>>>null
+[2023-12-12 16:21:25,332][base_api.py 28][INFO]: 接口返回数据>>>{
+  "code": "200",
+  "msg": "高德查询成功",
+  "ip": "183.17.235.15",
+  "Digitaladdress": "3071404815",
+  "location": "中国广东省深圳市南山区电信"
+}
+[2023-12-12 16:21:25,335][conftest.py 19][INFO]: 接口测试用例完成>>>
+[2023-12-12 16:21:25,343][conftest.py 17][INFO]: 接口测试用例开始>>>
+[2023-12-12 16:21:25,606][base_api.py 31][INFO]: 接口请求方法>>>get
+[2023-12-12 16:21:25,606][base_api.py 32][INFO]: 接口请求地址>>>https://www.yuanxiapi.cn/api/translation/
+[2023-12-12 16:21:25,607][base_api.py 38][INFO]: 接口请求参数>>>
+{
+  "text": "密码"
+}
+[2023-12-12 16:21:25,607][base_api.py 40][INFO]: 接口请求参数>>>null
+[2023-12-12 16:21:26,138][base_api.py 28][INFO]: 接口返回数据>>>{
+  "code": "200",
+  "msg": "查询成功",
+  "content": "密码",
+  "result": "password / cipher / code / cryptogram"
+}
+[2023-12-12 16:21:26,142][conftest.py 19][INFO]: 接口测试用例完成>>>
